@@ -1,11 +1,14 @@
 package com.hunter.muhammadumar_project
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import com.hunter.muhammadumar_project.databinding.ActivitySecondBinding
 
 class SecondActivity : AppCompatActivity() {
+    lateinit var binding: ActivitySecondBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_second)
+        binding = ActivitySecondBinding.inflate(layoutInflater)
+        setContentView(binding.root)
     }
 }

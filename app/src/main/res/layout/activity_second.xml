@@ -26,6 +26,7 @@
                 android:backgroundTint="@color/white"
                 android:text="@string/back"
                 android:textColor="@color/blue"
+                android:onClick="previousDayAction"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -46,6 +47,7 @@
                 android:backgroundTint="@color/white"
                 android:text="@string/forward"
                 android:textColor="@color/blue"
+                android:onClick="nextDayAction"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 

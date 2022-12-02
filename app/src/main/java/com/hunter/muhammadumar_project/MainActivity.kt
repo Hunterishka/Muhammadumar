@@ -1,14 +1,19 @@
 package com.hunter.muhammadumar_project
 
-import android.os.Bundle
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
-import com.hunter.muhammadumar_project.databinding.ActivityMainBinding
+import android.os.Bundle
+import android.os.Handler
 
 class MainActivity : AppCompatActivity() {
-    lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        setContentView(R.layout.activity_main)
+
+        Handler().postDelayed(Runnable {
+            intent = Intent(this, SecondActivity::class.java)
+            startActivity(intent)
+            finish()
+        },2500)
     }
 }
